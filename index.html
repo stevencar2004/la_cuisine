@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Cuisine</title>
+    <link rel="shortcut icon" href="Assets/logo.ico" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,115 +30,166 @@
   </head>
 
   <body>
-    <header>
-      <div class="offer">
-        <p class="text-center offer__text">
-          20% de descuento en nuestra grifería por compras en nuestra plataforma
-          online
-        </p>
-      </div>
-
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div
-          class="container-fluid d-flex  justify-content-lg-around  justify-content-sm-between"
-        >
-            <a class="navbar-brand" href="#">
-              <img src="Assets/logo-la-cuisine.png" alt="" />
-            </a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#menu"
-              aria-controls="menu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-evenly justify-content-xxl-around" id="menu">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item" >
-                  <a class="nav-link" href="#">MESA</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link nav__link--active" href="#"
-                    >ELECTRODOMÉSTICOS PEQUEÑOS
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link " href="#"
-                    >ELECTRODOMÉSTICOS GRANDES</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link " href="#">BBQ & OUTDOOR</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link " href="#">NUESTRAS MARCAS</a>
-                </li>
-              </ul>
-
-              <div class="menu-icons d-flex justify-content-between align-items-center">
-                <i class="fas fa-search"></i>
-                <img src="Assets/cart-add.svg" alt="cart-add" />
-                <img src="Assets/user.svg" alt="user" />
+    <main class="container-fluid p-0">
+      <header>
+        <div class="offer">
+          <p class="text-center offer__text">
+            20% de descuento en nuestra grifería por compras en nuestra plataforma
+            online
+          </p>
+        </div>
+      
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div
+            class="container-fluid d-flex  justify-content-lg-around  justify-content-sm-between"
+          >
+              <a class="navbar-brand" href="#">
+                <img src="Assets/logo-la-cuisine.png" alt="" />
+              </a>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse d-lg-flex justify-content-lg-evenly justify-content-xxl-around" id="menu">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item" >
+                    <a class="nav-link" href="#">MESA</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link nav__link--active" href="#"
+                      >ELECTRODOMÉSTICOS PEQUEÑOS
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"
+                      >ELECTRODOMÉSTICOS GRANDES</a
+                    >
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">BBQ & OUTDOOR</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">NUESTRAS MARCAS</a>
+                  </li>
+                </ul>
+      
+                <div class="menu-icons d-flex justify-content-between align-items-center">
+                  <i class="fas fa-search"></i>
+                  <img src="Assets/cart-add.svg" alt="cart-add" />
+                  <img src="Assets/user.svg" alt="user" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <section class="container-fluid p-0 banner">
+        <div class="row banner__newspaper m-0">
+          <div class="col-12 col-lg-4 p-0 banner__item--highlither"  >
+          </div>
+      
+          <div class=" col-12 col-lg-8 p-0 banner__item banner__item--important">
+            <p >Electrodomésticos grandes</p>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <h2 class="text-center mb-0 mb-sm-3">
+                ¡Llegó la Navidad! <br>
+                Y los regalos no se hacen esperar
+              </h2>
+              <div class="btn-arrow d-flex justify-content-between align-items-center">
+                <span>Ver productos</span>
+                <i class="fas fa-long-arrow-alt-right"></i> 
               </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <section class="container-fluid p-0 banner">
-      <div class="row banner__newspaper m-0">
-        <div class="col-12 col-lg-4 p-0 banner__item--highlither"  >
-        </div>
-
-        <div class=" col-12 col-lg-8 p-0 banner__item banner__item--important">
-          <p >Electrodomésticos grandes</p>
-          <div class="d-flex flex-column justify-content-center align-items-center">
-            <h2 class="text-center mb-0 mb-sm-3">
-              ¡Llegó la Navidad! <br>
-              Y los regalos no se hacen esperar
-            </h2>
-            <div class="btn-arrow d-flex justify-content-between align-items-center">
-              <span>Ver productos</span>
-              <i class="fas fa-long-arrow-alt-right"></i> 
-            </div>
+      
+        <div class="row newsletter m-0">
+          <div class="newsletter__wrapper d-flex flex-column justify-content-center align-items-center">
+            <h3 class="newsletter__title">Newsletter</h3>
+            <p class="newsletter__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            
+            <form action="#" class="newsletter__form">
+              <input type="text" class="form-control newsletter__input" id="input">
+              
+              <div class="form-check newsletter__checkbox">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Acepto <strong>términos y condiciones</strong>
+                </label>
+              </div>
+      
+              <div class="btn-arrow d-flex justify-content-between align-items-center">
+                <span>Suscribirse</span>
+                <i class="fas fa-long-arrow-alt-right"></i> 
+              </div>
+            </form>
           </div>
         </div>
-      </div>
+      </section>
+      
+      <section class="inspirated d-flex justify-content-center align-items-center flex-column">
+        <h2 class="inspirated__bg">Get inspired</h2>
+        <h3 class="inspirated__title">Inspirate</h3>
 
-      <div class="row newsletter m-0">
-        <div class="newsletter__wrapper d-flex flex-column justify-content-center align-items-center">
-          <h3 class="newsletter__title">Newsletter</h3>
-          <p class="newsletter__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-          
-          <form action="#" class="newsletter__form">
-            <input type="text" class="form-control newsletter__input" id="input">
-            
-            <div class="form-check newsletter__checkbox">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                Acepto <strong>términos y condiciones</strong>
-              </label>
-            </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide row justify-content-lg-evenly gap-1">
+              <div class="col-12 col-lg-6 card">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <hr class="card__separate">
+                      <h5 class="card-title">Título para el artículo destacado
+                        en la sección Inspírate</h5>
+                    </div>
+                  </div>
 
-            <div class="btn-arrow d-flex justify-content-between align-items-center">
-              <span>Suscribirse</span>
-              <i class="fas fa-long-arrow-alt-right"></i> 
+                  <div class="col-md-4">
+                    <img src="Assets/card_fridge.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 card">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Título para el artículo destacado
+                        en la sección Inspírate</h5>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="Assets/card_chef.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+              </div>
+
             </div>
-          </form>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
+
+        <button type="button" class="btn btn-outline-secondary p-3 rounded">Ver todos</button>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
