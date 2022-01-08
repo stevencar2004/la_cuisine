@@ -1,0 +1,107 @@
+.banner__item {
+  height: 200px;
+}
+
+.banner__item--highlither {
+  background-image: url("../../Assets/utils.png");
+  background-color: #c4c4c4;
+  background-blend-mode: overlay;
+}
+
+.banner__item--important {
+  background-image: url("../../Assets/image\ 5.png");
+  background-color: #800e0c;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+.banner__item--important p {
+  padding: 10px 13px;
+  font-size: 12px;
+  font-family: $font-titles;
+}
+
+.banner__item--important h2 {
+  font-size: 28px;
+  line-height: 38px;
+  font-family: $font-titles;
+}
+
+.btn-arrow {
+  @include button;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__item--important p {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+  .banner__item--important h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner__item--important h2 {
+    font-size: 48px;
+  }
+}
+
+// NEWSLETTER
+
+.newsletter {
+  width: 100%;
+  height: 270px;
+  padding: 30px 0px;
+  background-color: $color-gray;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/logo.svg");
+    opacity: 0.02;
+    background-repeat: repeat;
+  }
+}
+
+.newsletter__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.newsletter__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.newsletter__text {
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.newsletter__input {
+  max-width: 100%;
+  width: 560px;
+  height: 40px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.newsletter__checkbox {
+  margin-bottom: 15px;
+}
+
+.newsletter .btn-arrow {
+  @include button(#000);
+}

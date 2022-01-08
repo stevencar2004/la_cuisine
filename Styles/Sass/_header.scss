@@ -1,0 +1,57 @@
+.offer {
+  width: 100%;
+  background-color: #000;
+}
+
+.offer__text {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+.navbar {
+  padding: 30px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav__link--active {
+  color: $color-secundary;
+}
+
+.menu-icons {
+  width: 120px;
+}
+
+@media screen and (min-width: 310px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+  .navbar-light .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: auto;
+  }
+  .navbar-light .navbar-nav .nav-link,
+  .menu-icons {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar-light .navbar-nav .nav-link,
+  .menu-icons {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin button($color: #fff) {
+  width: 132px;
+  font-size: 12px;
+  color: $color;
+  border-bottom: 2px solid $color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
