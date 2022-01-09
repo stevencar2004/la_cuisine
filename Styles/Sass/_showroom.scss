@@ -1,0 +1,68 @@
+.showroom {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	background-image: url("../../Assets/showroom_banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background-color: rgba(#000000, 0.6);
+	}
+}
+
+.showroom__wrapper {
+	height: 100%;
+	position: relative;
+}
+
+.showroom__bg {
+	color: #dedede;
+	opacity: 0.3;
+	font-size: 58px;
+	font-family: $font-titles;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		font-size: 98px;
+	}
+}
+
+.showroom__title {
+	font-size: 28px;
+	margin-top: -40px;
+	text-align: center;
+	color: #fff;
+	@media screen and (min-width: 768px) {
+		margin-top: -50px;
+	}
+}
+
+.showroom__date {
+	align-self: flex-start;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	margin-left: 100px;
+}
+
+.showroom__text {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	font-family: $font-titles;
+	line-height: 28px;
+	font-weight: 400;
+	@media screen and (min-width: 768px) {
+		font-size: 28px;
+	}
+}
+
+.showroom__btn {
+	font-weight: 700;
+}
