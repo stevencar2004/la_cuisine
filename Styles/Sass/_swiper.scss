@@ -1,68 +1,60 @@
 .inspirated {
-  width: 100%;
-  padding: 40px 0;
+	width: 100%;
+	padding: 40px 0;
 }
 
 .inspirated__bg {
-  color: #f0f0f0;
-  font-size: 98px;
-  font-family: $font-titles;
+	color: #f0f0f0;
+	font-size: 68px;
+	font-family: $font-titles;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		font-size: 98px;
+	}
 }
 
 .inspirated__title {
-  margin-top: -50px;
+	font-size: 28px;
+	margin-top: -50px;
+	text-align: center;
+}
+
+.inspirated__wrapper {
+	width: 100%;
 }
 
 .swiper {
-  padding: 50px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.swiper-wrapper {
-  width: 100%;
-  margin-bottom: 20px;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide {
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+	background: #fff;
+	background-position: center;
+	background-size: cover;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+// .swiper-slide img {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// 	object-fit: cover;
+// }
 
 .card {
-  width: 50%;
-  border: none;
+	border: none;
 }
 
 .card__separate {
-  color: $color-secundary;
-  height: 3px;
-  width: 50px;
+	color: $color-secundary;
+	display: block;
+	width: 55px;
+	height: 10px;
 }
 
-.card__title {
-  width: 50%;
+.inspirated__btn {
+	padding: 10px 25px;
+	border-radius: 20px;
+	color: #000;
 }

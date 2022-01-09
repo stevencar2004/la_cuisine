@@ -3,9 +3,11 @@
 @import "header";
 @import "banner";
 @import "swiper";
+@import "showroom";
+@import "footer";
 
 body {
-  font-family: $font-primary;
-  font-weight: 400;
-  position: relative;
+	font-family: $font-primary;
+	font-weight: 400;
+	position: relative;
 }
