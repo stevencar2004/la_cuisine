@@ -10,6 +10,8 @@
 
 .menu-icons { width: 120px; }
 
+.menu-icons i:hover, .menu-icons img:hover { cursor: pointer; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; color: #757575; }
+
 @media screen and (min-width: 310px) { .navbar-brand img { width: 150px; }
   .navbar-light .navbar-toggler { width: 40px; height: 40px; font-size: 15px; text-align: center; padding: 0; } }
 
@@ -20,7 +22,7 @@
 
 .banner__item { height: 200px; }
 
-.banner__item--highlither { background-image: url("../../Assets/utils.png"); background-color: #c4c4c4; background-blend-mode: overlay; }
+.banner__item--highlither { background-image: url("../../Assets/utils.png"); background-color: #c4c4c4; background-blend-mode: overlay; -webkit-filter: brightness(1.05); filter: brightness(1.05); }
 
 .banner__item--important { background-image: url("../../Assets/image 5.png"); background-color: #800e0c; background-blend-mode: multiply; color: #fff; }
 
@@ -79,13 +81,17 @@
 
 .swiper-slide { background: #fff; background-position: center; background-size: cover; }
 
+.swiper-button-next, .swiper-button-prev { color: #8b2321; }
+
+.swiper-button-next:hover, .swiper-button-prev:hover { -webkit-transition: all 0.3s ease; transition: all 0.3s ease; opacity: 0.8; }
+
 .card { border: none; }
 
 .card__separate { color: #8b2321; display: block; width: 55px; height: 10px; }
 
 .inspirated__btn { padding: 10px 25px; border-radius: 20px; color: #000; }
 
-.showroom { width: 100%; height: 700px; position: relative; background-image: url("../../Assets/showroom_banner.png"); background-repeat: no-repeat; background-size: cover; }
+.showroom { width: 100%; height: 700px; position: relative; background-image: url("../../Assets/showroom_banner.png"); background-repeat: no-repeat; background-size: cover; overflow: hidden; }
 
 .showroom::before { content: ""; width: 100%; height: 100%; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.6); }
 
@@ -99,7 +105,9 @@
 
 @media screen and (min-width: 768px) { .showroom__title { margin-top: -50px; } }
 
-.showroom__date { -ms-flex-item-align: start; align-self: flex-start; padding-bottom: 20px; border-bottom: 2px solid #fff; color: #fff; margin-left: 100px; }
+.showroom__date { -ms-flex-item-align: start; align-self: flex-start; padding-bottom: 20px; border-bottom: 2px solid #fff; color: #fff; margin: 0 auto; }
+
+@media screen and (min-width: 768px) { .showroom__date { margin-left: 200px; } }
 
 .showroom__text { font-size: 24px; color: #fff; text-align: center; font-family: "Rozha One", serif; line-height: 28px; font-weight: 400; }
 
